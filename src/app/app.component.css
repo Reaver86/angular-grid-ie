@@ -34,11 +34,19 @@
 }
 
 .container > * {
-  display: grid;
-  place-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #BADA55;
   border: 3px solid rgba(0, 0, 0, 0.03);
   border-radius: 5px;
   font-size: 1.5rem;
   padding: 0.5em;
+}
+
+@supports(display: grid) {
+  .container > * {
+    display: grid;
+    place-items: center;
+  }
 }
