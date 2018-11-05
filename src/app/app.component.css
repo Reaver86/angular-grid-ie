@@ -2,10 +2,10 @@
   display: grid;
   grid-gap: 10px;
   grid-template:
-    "header   header   header" auto
-    "content  content  side" auto
-    "article1 article2 side" auto
-    "footer   footer   footer" auto /
+    "header   header   header" 1fr
+    "content  content  side" 1fr
+    "article1 article2 side" 1fr
+    "footer   footer   footer" 1fr /
     1fr       1fr      300px;
 }
 
@@ -48,11 +48,11 @@
   .container {
     grid-gap: 10px;
     grid-template:
-      "header header" auto
-      "side side" auto
-      "content content" auto
-      "article1 article2" auto
-      "footer footer" auto /
+      "header header" 1fr
+      "side side" 1fr
+      "content content" 1fr
+      "article1 article2" 1fr
+      "footer footer" 1fr /
       1fr     1fr;
   }
 }
@@ -61,12 +61,12 @@
   .container {
     grid-gap: 10px;
     grid-template:
-      "header" auto
-      "side" auto
-      "content" auto
-      "article1" auto
-      "article2" auto
-      "footer" auto /
+      "header" 1fr
+      "side" 1fr
+      "content" 1fr
+      "article1" 1fr
+      "article2" 1fr
+      "footer" 1fr /
       1fr;
   }
 }
