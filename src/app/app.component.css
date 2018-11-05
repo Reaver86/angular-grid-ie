@@ -2,10 +2,10 @@
   display: grid;
   grid-gap: 10px;
   grid-template:
-    "header   header   header"
-    "content  content  side"
-    "article1 article2 side"
-    "footer   footer   footer" /
+    "header   header   header" auto
+    "content  content  side" auto
+    "article1 article2 side" auto
+    "footer   footer   footer" auto /
     1fr       1fr      300px;
 }
 
@@ -48,11 +48,11 @@
   .container {
     grid-gap: 10px;
     grid-template:
-      "header header"
-      "side side"
-      "content content"
-      "article1 article2"
-      "footer footer" /
+      "header header" auto
+      "side side" auto
+      "content content" auto
+      "article1 article2" auto
+      "footer footer" auto /
       1fr     1fr;
   }
 }
@@ -61,12 +61,12 @@
   .container {
     grid-gap: 10px;
     grid-template:
-      "header"
-      "side"
-      "content"
-      "article1"
-      "article2"
-      "footer" /
+      "header" auto
+      "side" auto
+      "content" auto
+      "article1" auto
+      "article2" auto
+      "footer" auto /
       1fr;
   }
 }
